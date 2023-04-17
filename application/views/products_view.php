@@ -24,9 +24,9 @@
                         <td><?php echo $product->prod_price;?></td>
                         <td><?php echo $product->prod_date_created;?></td>
                         <td>
-                            <a href="" class="btn btn-primary">View Product</a>
-                            <a href="" class="btn btn-secondary">Edit Product</a>
-                            <a href="" class="btn btn-danger">Delete Product</a>
+                            <a href="<?= base_url('Products/viewProduct/' .$product->prod_id) ?>" class="btn btn-primary">View Product</a>
+                            <a href="<?= base_url('Products/editProduct/'.$product->prod_id) ?>" class="btn btn-secondary">Edit Product</a>
+                            <a href="<?= base_url('Products/processDelete/'.$product->prod_id) ?>" class="btn btn-danger">Delete Product</a>
                         </td>
                     </tr>
                 <?php endforeach?>
